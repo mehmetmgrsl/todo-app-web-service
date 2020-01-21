@@ -1,4 +1,4 @@
-package study.mehmet.todoappwebservice;
+package study.mehmet.todoappwebservice.helloworld;
 
 public class HelloWorldBean {
 

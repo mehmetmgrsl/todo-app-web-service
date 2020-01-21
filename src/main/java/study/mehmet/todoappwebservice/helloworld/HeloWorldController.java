@@ -1,4 +1,4 @@
-package study.mehmet.todoappwebservice;
+package study.mehmet.todoappwebservice.helloworld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
