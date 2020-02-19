@@ -1,10 +1,10 @@
-package study.mehmet.todoappwebservice.helloworld;
+package study.mehmet.todoappwebservice.basic.auth;
 
-public class HelloWorldBean {
+public class AuthenticationBean {
 
 	private String message;
 
-	public HelloWorldBean(String message) {
+	public AuthenticationBean(String message) {
 		this.message = message;
 	}
 
@@ -18,7 +18,7 @@ public class HelloWorldBean {
 
 	@Override
 	public String toString() {
-		return String.format("HelloWorldBean [message=%s]", message);
+		return String.format("AuthenticationBean [message=%s]", message);
 	}
 
 }
