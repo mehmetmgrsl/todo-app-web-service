@@ -2,7 +2,6 @@ package study.mehmet.todoappwebservice.basic.auth;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -10,9 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BasicAuthenticationController {
 	
 	@GetMapping(path = "/basicauth")
-	public AuthenticationBean helloWorldPathVariable(@PathVariable String name) {
+	public AuthenticationBean helloWorldPathVariable() {
 		return new AuthenticationBean("You are authenticated");
 	}
-
-
 }
