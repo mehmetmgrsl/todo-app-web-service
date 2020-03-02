@@ -2,9 +2,17 @@ package study.mehmet.todoappwebservice.todo;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Todo {
-	private long id;
-	private String usernname;
+	@Id
+	@GeneratedValue
+	private Long id;
+	
+	private String username;
 	private String description;
 	private Date targetDate;
 	private boolean isDone;
@@ -13,26 +21,26 @@ public class Todo {
 		
 	}
 	
-	public Todo(long id, String usernname, String description, Date targetDate, boolean isDone) {
+	public Todo(Long id, String username, String description, Date targetDate, boolean isDone) {
 		super();
 		this.id = id;
-		this.usernname = usernname;
+		this.username = username;
 		this.description = description;
 		this.targetDate = targetDate;
 		this.isDone = isDone;
 	}
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getUsernname() {
-		return usernname;
+	public String getUsername() {
+		return username;
 	}
-	public void setUsernname(String usernname) {
-		this.usernname = usernname;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	public String getDescription() {
 		return description;

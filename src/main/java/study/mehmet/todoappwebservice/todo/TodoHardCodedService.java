@@ -12,11 +12,11 @@ public class TodoHardCodedService {
 
 	private static int idCounter = 0;
 
-	static {
-		todos.add(new Todo(++idCounter, "aaa", "Learn to Dance", new Date(), false));
-		todos.add(new Todo(++idCounter, "aaa", "Learn about Microservices", new Date(), false));
-		todos.add(new Todo(++idCounter, "aaa", "Learn about Angular", new Date(), false));
-	}
+//	static {
+//		todos.add(new Todo(++idCounter, "aaa", "Learn to Dance", new Date(), false));
+//		todos.add(new Todo(++idCounter, "aaa", "Learn about Microservices", new Date(), false));
+//		todos.add(new Todo(++idCounter, "aaa", "Learn about Angular", new Date(), false));
+//	}
 
 	public List<Todo> findAll() {
 		return todos;
@@ -37,7 +37,7 @@ public class TodoHardCodedService {
 	
 	public Todo save(Todo todo) {
 		if (todo.getId() == -1 || todo.getId() == 0) {
-			todo.setId(++idCounter);
+			//todo.setId(++idCounter);
 			todos.add(todo);
 			
 		} else {
