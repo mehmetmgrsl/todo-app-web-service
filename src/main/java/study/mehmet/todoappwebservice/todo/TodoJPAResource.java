@@ -59,8 +59,7 @@ public class TodoJPAResource {
 		todo.setUsername(username);
 		Todo createdTodo = todoJpaRepository.save(todo);
 		
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-						.path("/{id}").buildAndExpand(createdTodo.getId()).toUri();
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdTodo.getId()).toUri();
 	
 		return ResponseEntity.created(uri).build();
 	}
